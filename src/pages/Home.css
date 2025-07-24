@@ -1,0 +1,215 @@
+.home-unique {
+  width: 100%;
+  min-height: 100vh;
+  background: #f8f9fa;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: linear-gradient(90deg, #005baa 60%, #f8f9fa 100%);
+  color: #fff;
+  padding: 3rem 2rem 2rem 2rem;
+  border-radius: 0 0 32px 32px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.06);
+  gap: 2rem;
+}
+.hero-content {
+  max-width: 500px;
+}
+.hero-content h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+.hero-content p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+.cta-btn {
+  background: #ffb300;
+  color: #222;
+  padding: 0.75rem 2rem;
+  border: none;
+  border-radius: 24px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background 0.2s, transform 0.2s;
+}
+.cta-btn:hover {
+  background: #ffa000;
+  transform: translateY(-2px) scale(1.04);
+  box-shadow: 0 4px 16px rgba(0,0,0,0.10);
+}
+.hero-img {
+  width: 320px;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 16px;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.10);
+  background: #fff;
+}
+
+.features {
+  margin: 3rem auto 0 auto;
+  max-width: 1000px;
+  text-align: center;
+}
+.features-list {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  margin-top: 2rem;
+  flex-wrap: wrap;
+}
+.feature {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+  padding: 1.5rem 1rem;
+  width: 260px;
+  min-height: 160px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.feature h3 {
+  color: #005baa;
+  margin-bottom: 0.5rem;
+}
+
+.quick-clients {
+  margin: 3rem auto 0 auto;
+  max-width: 900px;
+  text-align: center;
+}
+.client-logo-row {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1.5rem;
+  flex-wrap: wrap;
+}
+.client-logo-row img {
+  width: 90px;
+  height: 60px;
+  object-fit: contain;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  padding: 0.5rem;
+}
+
+.reviews-home {
+  max-width: 900px;
+  margin: 3rem auto 0 auto;
+  padding: 2rem 0 3rem 0;
+  text-align: center;
+}
+.reviews-home h2 {
+  color: #005baa;
+  margin-bottom: 2rem;
+}
+.review-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+.review {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+  padding: 1.5rem 2rem;
+  max-width: 340px;
+  min-width: 260px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.review-text {
+  font-size: 1.08rem;
+  color: #333;
+  margin-bottom: 1.2rem;
+  font-style: italic;
+}
+.reviewer {
+  color: #005baa;
+  font-weight: bold;
+  font-size: 1rem;
+  margin-top: 0.5rem;
+  align-self: flex-end;
+}
+
+.home-unique, .hero, .features, .quick-clients, .reviews-home {
+  transition: background 0.4s, box-shadow 0.4s;
+}
+
+.cta-btn {
+  transition: background 0.2s, transform 0.2s;
+}
+.cta-btn:hover {
+  background: #ffa000;
+  transform: translateY(-2px) scale(1.04);
+  box-shadow: 0 4px 16px rgba(0,0,0,0.10);
+}
+
+.feature, .client, .review {
+  transition: box-shadow 0.3s, transform 0.3s, background 0.3s;
+}
+.feature:hover, .client:hover, .review:hover {
+  box-shadow: 0 6px 24px rgba(0,91,170,0.10);
+  transform: translateY(-6px) scale(1.03);
+  background: #f1f7fc;
+}
+
+.hero-img, .client-logo-row img {
+  transition: box-shadow 0.3s, transform 0.3s;
+}
+.hero-img:hover, .client-logo-row img:hover {
+  box-shadow: 0 6px 24px rgba(0,91,170,0.13);
+  transform: scale(1.04) rotate(-2deg);
+}
+
+/* Fade-in animation for sections */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.hero, .features, .quick-clients, .reviews-home {
+  animation: fadeInUp 0.8s cubic-bezier(.23,1.01,.32,1) both;
+}
+.features { animation-delay: 0.1s; }
+.quick-clients { animation-delay: 0.2s; }
+.reviews-home { animation-delay: 0.3s; }
+
+@media (max-width: 900px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    padding: 2rem 1rem 1rem 1rem;
+  }
+  .hero-img {
+    width: 90vw;
+    max-width: 320px;
+    height: 180px;
+    margin-top: 1.5rem;
+  }
+  .features-list {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  .client-logo-row {
+    gap: 1rem;
+  }
+} 

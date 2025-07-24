@@ -1,0 +1,107 @@
+.contact-section {
+  max-width: 600px;
+  margin: 3rem auto 4rem auto;
+  padding: 2.5rem 1.5rem 2.5rem 1.5rem;
+  background: #f8f9fa;
+  border-radius: 18px;
+  box-shadow: 0 4px 32px rgba(0,91,170,0.04);
+  text-align: center;
+}
+.contact-section h2 {
+  color: #005baa;
+  font-size: 2rem;
+  margin-bottom: 1.2rem;
+  font-weight: 700;
+}
+.contact-desc {
+  color: #333;
+  font-size: 1.13rem;
+  margin-bottom: 2.2rem;
+}
+.contact-card {
+  background: #fff;
+  border-radius: 14px;
+  box-shadow: 0 2px 12px rgba(0,91,170,0.07);
+  padding: 2rem 1.2rem 1.2rem 1.2rem;
+  margin: 0 auto;
+  max-width: 480px;
+  text-align: left;
+}
+.contact-success {
+  color: #007e33;
+  font-weight: bold;
+  font-size: 1.15rem;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+.form-row {
+  display: flex;
+  gap: 1.2rem;
+}
+.form-group {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+.form-group label {
+  font-weight: 600;
+  color: #005baa;
+  margin-bottom: 0.4rem;
+  font-size: 1rem;
+}
+.form-group input,
+.form-group textarea {
+  padding: 0.7rem 1rem;
+  border: 1.5px solid #cfd8dc;
+  border-radius: 7px;
+  font-size: 1rem;
+  background: #f8f9fa;
+  transition: border 0.2s, box-shadow 0.2s;
+  outline: none;
+}
+.form-group input:focus,
+.form-group textarea:focus {
+  border: 1.5px solid #005baa;
+  box-shadow: 0 2px 8px rgba(0,91,170,0.07);
+}
+.send-btn {
+  background: #005baa;
+  color: #fff;
+  border: none;
+  border-radius: 7px;
+  padding: 0.9rem 0;
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin-top: 0.5rem;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.2s, box-shadow 0.2s;
+  box-shadow: 0 2px 8px rgba(0,91,170,0.07);
+}
+.send-btn:hover {
+  background: #003e6b;
+  transform: translateY(-2px) scale(1.03);
+  box-shadow: 0 4px 16px rgba(0,91,170,0.10);
+}
+.contact-note {
+  margin-top: 1.5rem;
+  font-size: 0.98rem;
+  color: #666;
+  text-align: center;
+}
+@media (max-width: 700px) {
+  .contact-section {
+    padding: 1.2rem 0.2rem 2rem 0.2rem;
+  }
+  .contact-card {
+    padding: 1.2rem 0.5rem 1rem 0.5rem;
+  }
+  .form-row {
+    flex-direction: column;
+    gap: 0.7rem;
+  }
+} 

@@ -1,0 +1,82 @@
+.about {
+  max-width: 950px;
+  margin: 0 auto;
+  padding: 3rem 2rem 4rem 2rem;
+  background: #f8f9fa;
+  border-radius: 18px;
+  box-shadow: 0 4px 32px rgba(0,91,170,0.04);
+}
+.about h2 {
+  color: #005baa;
+  font-size: 2.1rem;
+  margin-bottom: 1.5rem;
+  font-weight: 700;
+}
+.about h3 {
+  color: #005baa;
+  margin-top: 2.2rem;
+  margin-bottom: 0.7rem;
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+.about p {
+  font-size: 1.13rem;
+  color: #222;
+  margin-bottom: 1.2rem;
+  line-height: 1.7;
+}
+.team-section {
+  display: flex;
+  gap: 2.5rem;
+  margin-top: 2.5rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.team-member {
+  flex: 1 1 220px;
+  max-width: 260px;
+  background: #fff;
+  border-radius: 14px;
+  box-shadow: 0 2px 12px rgba(0,91,170,0.07);
+  padding: 2rem 1.2rem 1.2rem 1.2rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: box-shadow 0.3s, transform 0.3s;
+}
+.team-member:hover {
+  box-shadow: 0 8px 32px rgba(0,91,170,0.13);
+  transform: translateY(-6px) scale(1.04);
+}
+.team-member img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 1rem;
+  border: 2.5px solid #005baa;
+  background: #f1f7fc;
+}
+.team-member h4 {
+  margin: 0.5rem 0 0.2rem 0;
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: #222;
+}
+.team-member p {
+  margin: 0;
+  font-size: 1.02rem;
+  color: #005baa;
+  font-weight: 500;
+}
+@media (max-width: 900px) {
+  .about {
+    padding: 2rem 0.5rem 3rem 0.5rem;
+  }
+  .team-section {
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: center;
+  }
+} 
